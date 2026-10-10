@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional SEO services to boost your online visibility. Proven strategies for organic traffic, keyword ranking, and conversion optimization.">
+  <meta name="keywords" content="SEO services, search engine optimization, digital marketing, organic traffic, keyword ranking, SEO expert">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="SEO Pro Services">
+  <meta property="og:title" content="Professional SEO Services | Boost Your Online Visibility">
+  <meta property="og:description" content="Proven SEO strategies to increase organic traffic and rankings. Expert team with 10+ years experience.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Professional SEO Services | Organic Growth &amp; Rankings</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;family=Merriweather:wght@400;700&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['"Merriweather"', 'Georgia', 'serif'],
+            body: ['"Sora"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .app-root { height: 100%; overflow-y: auto; overflow-x: hidden; }
+    html { scroll-behavior: smooth; }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideInRight {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes pulse-light {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    .anim-fade-up { animation: fadeUp 0.7s ease forwards; }
+    .anim-slide-right { animation: slideInRight 0.7s ease forwards; }
+    .anim-slide-left { animation: slideInLeft 0.7s ease forwards; }
+    .anim-scale { animation: scaleIn 0.6s ease forwards; }
+    .anim-d1 { animation-delay: 0.1s; opacity: 0; }
+    .anim-d2 { animation-delay: 0.2s; opacity: 0; }
+    .anim-d3 { animation-delay: 0.3s; opacity: 0; }
+    .anim-d4 { animation-delay: 0.4s; opacity: 0; }
+    .anim-d5 { animation-delay: 0.5s; opacity: 0; }
+    .anim-d6 { animation-delay: 0.6s; opacity: 0; }
+
+    /* Card hover effects */
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    }
+
+    /* Gradient text */
+    .grad-text {
+      background: linear-gradient(135deg, #1e40af, #0891b2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Glass effect */
+    .glass-effect {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Toast notification */
+    .toast-msg {
+      position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      padding: 1rem 2rem; border-radius: 12px; z-index: 1000;
+      font-family: 'Sora', sans-serif; font-weight: 600;
+      animation: fadeUp 0.4s ease forwards;
+      pointer-events: auto;
+    }
+
+    /* Dot pattern */
+    .dot-pattern {
+      background-image: radial-gradient(circle, #0891b220 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* Smooth transitions */
+    * { transition: background-color 0.3s ease, color 0.3s ease; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+ </head>
+ <body class="h-full">
+  <div class="app-root font-body" id="appRoot"><!-- Navigation -->
+   <header role="banner">
+    <nav class="glass-effect fixed top-0 left-0 w-full z-50 border-b border-slate-200/20" role="navigation" aria-label="Main navigation">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20"><a href="#hero" class="flex items-center gap-3" aria-label="Go to top">
+       <div class="w-10 h-10 rounded-lg flex items-center justify-center font-bold text-white text-lg" id="logoBox" style="background: linear-gradient(135deg, #1e40af, #0891b2);">
+        S
+       </div><span class="font-heading text-lg font-bold hidden sm:block" id="navCompanyName" style="color:#1e40af;">SEO Pro</span> </a>
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium"><a href="#services" class="hover:opacity-70 transition-opacity" style="color:#334155;">Services</a> <a href="#process" class="hover:opacity-70 transition-opacity" style="color:#334155;">How It Works</a> <a href="#pricing" class="hover:opacity-70 transition-opacity" style="color:#334155;">Pricing</a> <a href="#results" class="hover:opacity-70 transition-opacity" style="color:#334155;">Results</a> <a href="#contact" class="rounded-lg px-5 py-2.5 text-white font-semibold transition-all hover:opacity-90 hover:shadow-lg" id="navCta" style="background: linear-gradient(135deg, #1e40af, #0891b2);">Get Started</a>
+      </div><button class="lg:hidden p-2" id="mobileMenuBtn" aria-label="Open menu"> <i data-lucide="menu" class="w-6 h-6" style="color:#1e40af;"></i> </button>
+     </div><!-- Mobile menu -->
+     <div class="lg:hidden hidden flex-col px-6 pb-6 gap-3 text-sm font-medium bg-white border-t border-slate-100" id="mobileMenu"><a href="#services" class="py-2.5 rounded-lg px-3 hover:bg-slate-100" style="color:#334155;">Services</a> <a href="#process" class="py-2.5 rounded-lg px-3 hover:bg-slate-100" style="color:#334155;">How It Works</a> <a href="#pricing" class="py-2.5 rounded-lg px-3 hover:bg-slate-100" style="color:#334155;">Pricing</a> <a href="#results" class="py-2.5 rounded-lg px-3 hover:bg-slate-100" style="color:#334155;">Results</a> <a href="#contact" class="rounded-lg px-5 py-2.5 text-white font-semibold text-center" style="background: linear-gradient(135deg, #1e40af, #0891b2);">Get Started</a>
+     </div>
+    </nav>
+   </header>
+   <main role="main"><!-- Hero Section -->
+    <section id="hero" class="relative pt-32 sm:pt-40 pb-24 sm:pb-32 px-4 overflow-hidden">
+     <div class="absolute inset-0 dot-pattern opacity-30"></div>
+     <div class="absolute top-10 right-0 w-96 h-96 rounded-full blur-3xl opacity-15" style="background:#0891b2;"></div>
+     <div class="absolute bottom-0 left-0 w-72 h-72 rounded-full blur-3xl opacity-10" style="background:#1e40af;"></div>
+     <div class="max-w-6xl mx-auto relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+       <div>
+        <div class="anim-fade-up anim-d1 inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold mb-6 border" style="background:#0891b220; color:#0891b2; border-color:#0891b240;"><i data-lucide="trending-up" class="w-3.5 h-3.5"></i> Proven Results • 300+ Success Stories
+        </div>
+        <h1 class="anim-fade-up anim-d2 font-heading text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6" id="heroTitle" style="color:#0f172a;">Dominate Search Rankings &amp; Drive Organic Growth</h1>
+        <p class="anim-fade-up anim-d3 text-lg sm:text-xl max-w-2xl mb-8 leading-relaxed" id="heroSubtitle" style="color:#475569;">We help businesses rank higher on Google, attract qualified leads, and scale revenue through data-driven SEO strategies that actually work.</p>
+        <div class="anim-fade-up anim-d4 flex flex-col sm:flex-row gap-4"><a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-white font-semibold transition-all hover:opacity-90 hover:shadow-lg" id="heroCta" style="background: linear-gradient(135deg, #1e40af, #0891b2);"> <span id="heroCtaText">Start Your Free Audit</span> <i data-lucide="arrow-right" class="w-4 h-4"></i> </a> <a href="#process" class="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 font-semibold border-2 transition-all hover:shadow-md" style="color:#1e40af; border-color:#1e40af20; background:white;"> See How It Works </a>
+        </div>
+        <div class="anim-fade-up anim-d5 flex gap-8 pt-10 border-t border-slate-200 mt-10">
+         <div>
+          <div class="text-2xl font-heading font-bold" style="color:#1e40af;">
+           5.2K+
+          </div>
+          <div class="text-sm" style="color:#64748b;">
+           Keywords Ranked
+          </div>
+         </div>
+         <div>
+          <div class="text-2xl font-heading font-bold" style="color:#1e40af;">
+           300+
+          </div>
+          <div class="text-sm" style="color:#64748b;">
+           Happy Clients
+          </div>
+         </div>
+         <div>
+          <div class="text-2xl font-heading font-bold" style="color:#1e40af;">
+           10+
+          </div>
+          <div class="text-sm" style="color:#64748b;">
+           Years Experience
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="hidden lg:block anim-slide-right anim-d3">
+        <div class="relative">
+         <div class="rounded-2xl overflow-hidden shadow-2xl" style="background: linear-gradient(135deg, #1e40af, #0891b2);">
+          <div class="p-8 h-96 flex items-center justify-center text-white">
+           <div class="text-center"><i data-lucide="chart-line" class="w-24 h-24 mx-auto mb-4 opacity-80"></i>
+            <p class="text-2xl font-heading mb-2">Your Rankings</p>
+            <p class="text-sm opacity-80">📈 Average +150% traffic increase</p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section><!-- Services Section -->
+    <section id="services" class="py-20 sm:py-28 px-4" style="background:#f8fafc;">
+     <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16"><span class="inline-block text-xs font-bold tracking-widest uppercase mb-3" style="color:#0891b2;">Our Services</span>
+       <h2 class="font-heading text-3xl sm:text-4xl mb-4" style="color:#0f172a;">Complete SEO Solutions</h2>
+       <p class="max-w-2xl mx-auto" style="color:#64748b;">From technical optimization to content strategy, we handle every aspect of SEO.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesGrid">
+      </div>
+     </div>
+    </section><!-- Process Section -->
+    <section id="process" class="py-20 sm:py-28 px-4 relative" style="background:white;">
+     <div class="absolute inset-0 dot-pattern opacity-20"></div>
+     <div class="max-w-6xl mx-auto relative z-10">
+      <div class="text-center mb-16"><span class="inline-block text-xs font-bold tracking-widest uppercase mb-3" style="color:#0891b2;">Our Approach</span>
+       <h2 class="font-heading text-3xl sm:text-4xl mb-4" style="color:#0f172a;">How We Deliver Results</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+       <div class="card-hover rounded-2xl p-8 border border-slate-200 text-center anim-fade-up anim-d1" style="background:white;">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold" style="background: linear-gradient(135deg, #1e40af, #0891b2);">
+         1
+        </div>
+        <h3 class="font-heading text-xl mb-3" style="color:#0f172a;">Audit</h3>
+        <p class="text-sm" style="color:#64748b;">Deep dive analysis of your site, competitors &amp; opportunities</p>
+       </div>
+       <div class="card-hover rounded-2xl p-8 border border-slate-200 text-center anim-fade-up anim-d2" style="background:white;">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold" style="background: linear-gradient(135deg, #1e40af, #0891b2);">
+         2
+        </div>
+        <h3 class="font-heading text-xl mb-3" style="color:#0f172a;">Strategy</h3>
+        <p class="text-sm" style="color:#64748b;">Custom roadmap targeting your most valuable keywords</p>
+       </div>
+       <div class="card-hover rounded-2xl p-8 border border-slate-200 text-center anim-fade-up anim-d3" style="background:white;">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold" style="background: linear-gradient(135deg, #1e40af, #0891b2);">
+         3
+        </div>
+        <h3 class="font-heading text-xl mb-3" style="color:#0f172a;">Execution</h3>
+        <p class="text-sm" style="color:#64748b;">Technical fixes, content creation, link building &amp; more</p>
+       </div>
+       <div class="card-hover rounded-2xl p-8 border border-slate-200 text-center anim-fade-up anim-d4" style="background:white;">
+        <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold" style="background: linear-gradient(135deg, #1e40af, #0891b2);">
+         4
+        </div>
+        <h3 class="font-heading text-xl mb-3" style="color:#0f172a;">Track</h3>
+        <p class="text-sm" style="color:#64748b;">Monthly reports with rankings, traffic &amp; ROI metrics</p>
+       </div>
+      </div>
+     </div>
+    </section><!-- Pricing Section -->
+    <section id="pricing" class="py-20 sm:py-28 px-4" style="background:#f8fafc;">
+     <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16"><span class="inline-block text-xs font-bold tracking-widest uppercase mb-3" style="color:#0891b2;">Pricing</span>
+       <h2 class="font-heading text-3xl sm:text-4xl mb-4" style="color:#0f172a;">Choose Your Plan</h2>
+       <p class="max-w-xl mx-auto" style="color:#64748b;">Transparent pricing. No hidden fees. Scale as you grow.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6" id="pricingGrid">
+      </div>
+     </div>
+    </section><!-- Results Section -->
+    <section id="results" class="py-20 sm:py-28 px-4 relative" style="background:white;">
+     <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16"><span class="inline-block text-xs font-bold tracking-widest uppercase mb-3" style="color:#0891b2;">Results</span>
+       <h2 class="font-heading text-3xl sm:text-4xl mb-4" style="color:#0f172a;">Success Stories</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6" id="caseStudiesGrid">
+      </div>
+     </div>
+    </section><!-- Contact Section -->
+    <section id="contact" class="py-20 sm:py-28 px-4 relative">
+     <div class="absolute inset-0 dot-pattern opacity-20"></div>
+     <div class="max-w-6xl mx-auto relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
+       <div><span class="inline-block text-xs font-bold tracking-widest uppercase mb-3" style="color:#0891b2;">Let's Talk</span>
+        <h2 class="font-heading text-3xl sm:text-4xl mb-6" style="color:#0f172a;">Ready to Grow Your Organic Traffic?</h2>
+        <p class="text-lg mb-10" style="color:#64748b;">Get a free SEO audit and see exactly how we can help your business dominate search results.</p>
+        <div class="space-y-6">
+         <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style="background: linear-gradient(135deg, #1e40af, #0891b2);"><i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <div>
+           <div class="font-semibold mb-0.5" style="color:#0f172a;">
+            Office Address
+           </div>
+           <div id="contactAddress" style="color:#64748b;">
+            123 Digital Street, Tech City, TC 12345
+           </div>
+          </div>
+         </div>
+         <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style="background: linear-gradient(135deg, #1e40af, #0891b2);"><i data-lucide="phone" class="w-5 h-5"></i>
+          </div>
+          <div>
+           <div class="font-semibold mb-0.5" style="color:#0f172a;">
+            Phone
+           </div>
+           <div id="contactPhone" style="color:#64748b;">
+            +1 (555) 123-4567
+           </div>
+          </div>
+         </div>
+         <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style="background: linear-gradient(135deg, #1e40af, #0891b2);"><i data-lucide="mail" class="w-5 h-5"></i>
+          </div>
+          <div>
+           <div class="font-semibold mb-0.5" style="color:#0f172a;">
+            Email
+           </div>
+           <div id="contactEmail" style="color:#64748b;">
+            hello@seopro.com
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <form id="contactForm" class="rounded-2xl p-8 border border-slate-200 space-y-5" style="background:white;" novalidate>
+         <div><label for="cf-name" class="block text-sm font-semibold mb-2" style="color:#0f172a;">Full Name *</label> <input type="text" id="cf-name" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2" placeholder="John Doe" style="focus:ring-color:#0891b2;">
+         </div>
+         <div class="grid sm:grid-cols-2 gap-5">
+          <div><label for="cf-email" class="block text-sm font-semibold mb-2" style="color:#0f172a;">Email *</label> <input type="email" id="cf-email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2" placeholder="you@company.com" style="focus:ring-color:#0891b2;">
+          </div>
+          <div><label for="cf-phone" class="block text-sm font-semibold mb-2" style="color:#0f172a;">Phone</label> <input type="tel" id="cf-phone" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2" placeholder="+1 (555) 000-0000" style="focus:ring-color:#0891b2;">
+          </div>
+         </div>
+         <div><label for="cf-service" class="block text-sm font-semibold mb-2" style="color:#0f172a;">Service Interested In</label> <select id="cf-service" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 bg-white" style="focus:ring-color:#0891b2;"> <option value="">Select a service</option> <option>Technical SEO Audit</option> <option>Keyword Research &amp; Strategy</option> <option>Content Optimization</option> <option>Link Building</option> <option>Full SEO Package</option> <option>Other</option> </select>
+         </div>
+         <div><label for="cf-budget" class="block text-sm font-semibold mb-2" style="color:#0f172a;">Budget Range</label> <select id="cf-budget" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 bg-white" style="focus:ring-color:#0891b2;"> <option value="">Select range</option> <option>$500 - $1,000</option> <option>$1,000 - $2,500</option> <option>$2,500 - $5,000</option> <option>$5,000+</option> </select>
+         </div>
+         <div><label for="cf-message" class="block text-sm font-semibold mb-2" style="color:#0f172a;">Tell Us About Your Business *</label> <textarea id="cf-message" required rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 resize-none" placeholder="What's your current challenge?" style="focus:ring-color:#0891b2;"></textarea>
+         </div><button type="submit" id="submitBtn" class="w-full flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-white font-semibold transition-all hover:opacity-90 disabled:opacity-50" style="background: linear-gradient(135deg, #1e40af, #0891b2);"> <span id="submitText">Get Free Audit</span> <i data-lucide="send" class="w-4 h-4"></i> </button>
+         <div id="formMsg" class="text-center text-sm font-medium hidden"></div>
+        </form>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main><!-- Footer -->
+   <footer role="contentinfo" class="py-12 px-4 border-t border-slate-200" style="background:white;">
+    <div class="max-w-7xl mx-auto">
+     <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+       <div class="flex items-center gap-2 mb-4">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center font-bold text-white text-sm" style="background: linear-gradient(135deg, #1e40af, #0891b2);">
+         S
+        </div><span class="font-heading font-bold" id="footerCompanyName" style="color:#1e40af;">SEO Pro</span>
+       </div>
+       <p style="color:#64748b; font-size: 0.9rem;">Helping businesses dominate search and drive sustainable growth through proven SEO strategies.</p>
+      </div>
+      <div>
+       <h4 class="font-semibold mb-4" style="color:#0f172a;">Quick Links</h4>
+       <ul class="space-y-2 text-sm" style="color:#64748b;">
+        <li><a href="#services" class="hover:opacity-70 transition-opacity">Services</a></li>
+        <li><a href="#process" class="hover:opacity-70 transition-opacity">How It Works</a></li>
+        <li><a href="#pricing" class="hover:opacity-70 transition-opacity">Pricing</a></li>
+        <li><a href="#results" class="hover:opacity-70 transition-opacity">Results</a></li>
+       </ul>
+      </div>
+      <div>
+       <h4 class="font-semibold mb-4" style="color:#0f172a;">Follow Us</h4>
+       <div class="flex gap-3"><a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-lg flex items-center justify-center transition-all hover:opacity-70" style="background:#1e40af15; color:#1e40af;"> <i data-lucide="linkedin" class="w-4 h-4"></i> </a> <a href="#" aria-label="Twitter" class="w-10 h-10 rounded-lg flex items-center justify-center transition-all hover:opacity-70" style="background:#1e40af15; color:#1e40af;"> <i data-lucide="twitter" class="w-4 h-4"></i> </a> <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-lg flex items-center justify-center transition-all hover:opacity-70" style="background:#1e40af15; color:#1e40af;"> <i data-lucide="facebook" class="w-4 h-4"></i> </a>
+       </div>
+      </div>
+     </div>
+     <div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-slate-100">
+      <p class="text-sm" style="color:#64748b;">© 2025 SEO Pro Services. All rights reserved.</p>
+      <div class="flex gap-6 text-sm"><a href="#" style="color:#64748b;" class="hover:opacity-70 transition-opacity">Privacy Policy</a> <a href="#" style="color:#64748b;" class="hover:opacity-70 transition-opacity">Terms of Service</a>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+// ========== CONFIG & DEFAULTS ==========
+const defaultConfig = {
+  company_name: 'SEO Pro',
+  hero_title: 'Dominate Search Rankings & Drive Organic Growth',
+  hero_subtitle: 'We help businesses rank higher on Google, attract qualified leads, and scale revenue through data-driven SEO strategies that actually work.',
+  cta_text: 'Start Your Free Audit',
+  about_text: 'We are a team of SEO experts dedicated to helping businesses achieve sustainable growth through organic search.',
+  contact_address: '123 Digital Street, Tech City, TC 12345',
+  contact_phone: '+1 (555) 123-4567',
+  contact_email: 'hello@seopro.com',
+  primary_color: '#1e40af',
+  secondary_color: '#0891b2',
+  text_color: '#0f172a',
+  light_bg: '#f8fafc',
+  font_family: 'Merriweather',
+  font_size: 16
+};
+
+// Services data
+const services = [
+  { icon: 'search', title: 'Keyword Research', desc: 'Discover high-intent keywords with low competition that drive qualified traffic to your site.' },
+  { icon: 'zap', title: 'Technical SEO', desc: 'Fix crawlability issues, improve site speed, and optimize your architecture for better rankings.' },
+  { icon: 'edit-2', title: 'Content Optimization', desc: 'Create and optimize content that ranks and converts—targeting your ideal customers.' },
+  { icon: 'link', title: 'Link Building', desc: 'Build high-quality backlinks from authoritative sites that boost your domain authority.' },
+  { icon: 'bar-chart-2', title: 'Local SEO', desc: 'Dominate local search results and attract customers in your geographic service area.' },
+  { icon: 'trending-up', title: 'Analytics & Reporting', desc: 'Track rankings, traffic, and ROI with detailed monthly reports and actionable insights.' }
+];
+
+// Pricing data
+const pricing = [
+  { name: 'Starter', price: '$999', period: '/mo', desc: 'Perfect for local businesses', features: ['5-10 Keywords', 'Monthly Reporting', 'Basic Technical Audit', 'Content Optimization'] },
+  { name: 'Growth', price: '$2,499', period: '/mo', desc: 'For growing companies', features: ['20-30 Keywords', 'Bi-weekly Reports', 'Full Technical Audit', 'Content Strategy', 'Link Building (10/mo)'], highlight: true },
+  { name: 'Enterprise', price: 'Custom', period: '', desc: 'Enterprise solutions', features: ['50+ Keywords', 'Weekly Reports', 'Full SEO Management', 'Dedicated Account Manager', 'Advanced Analytics'] }
+];
+
+// Case studies
+const caseStudies = [
+  { company: 'TechStart Co', challenge: 'Struggling with visibility', result: '+350% Organic Traffic', time: '6 months' },
+  { company: 'Local Services Inc', challenge: 'Limited lead generation', result: '2,400+ Monthly Leads', time: '4 months' },
+  { company: 'E-commerce Plus', challenge: 'Low conversion rates', result: '+$150K Monthly Revenue', time: '8 months' }
+];
+
+// Render services
+function renderServices() {
+  const grid = document.getElementById('servicesGrid');
+  grid.innerHTML = services.map((s, i) => `
+    <article class="card-hover rounded-2xl p-8 border border-slate-200 anim-fade-up anim-d${Math.min(i+1, 6)}" style="background:white;">
+      <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-5 text-white text-xl" style="background: linear-gradient(135deg, #1e40af, #0891b2);">
+        <i data-lucide="${s.icon}" class="w-6 h-6"></i>
+      </div>
+      <h3 class="font-heading text-xl mb-3" style="color:#0f172a;">${s.title}</h3>
+      <p class="text-sm leading-relaxed" style="color:#64748b;">${s.desc}</p>
+    </article>
+  `).join('');
+  lucide.createIcons();
+}
+
+// Render pricing
+function renderPricing() {
+  const grid = document.getElementById('pricingGrid');
+  grid.innerHTML = pricing.map((p, i) => `
+    <article class="card-hover rounded-2xl p-8 border-2 anim-fade-up anim-d${i+1}" style="background:white; border-color:${p.highlight ? '#0891b2' : '#e2e8f0'}; ${p.highlight ? 'transform: scale(1.05)' : ''}">
+      ${p.highlight ? '<div class="inline-block px-3 py-1 rounded-full text-xs font-bold text-white mb-4" style="background: linear-gradient(135deg, #1e40af, #0891b2);">Most Popular</div>' : ''}
+      <h3 class="font-heading text-2xl mb-1" style="color:#0f172a;">${p.name}</h3>
+      <p class="text-sm mb-5" style="color:#64748b;">${p.desc}</p>
+      <div class="mb-6">
+        <span class="text-4xl font-bold" style="color:#1e40af;">${p.price}</span>
+        <span style="color:#64748b;">${p.period}</span>
+      </div>
+      <ul class="space-y-3 mb-6">
+        ${p.features.map(f => `<li class="flex items-center gap-2 text-sm" style="color:#475569;"><i data-lucide="check" class="w-4 h-4" style="color:#0891b2;"></i>${f}</li>`).join('')}
+      </ul>
+      <button class="w-full rounded-xl px-6 py-3 font-semibold transition-all text-white" style="background: linear-gradient(135deg, #1e40af, #0891b2);">Get Started</button>
+    </article>
+  `).join('');
+  lucide.createIcons();
+}
+
+// Render case studies
+function renderCaseStudies() {
+  const grid = document.getElementById('caseStudiesGrid');
+  grid.innerHTML = caseStudies.map((c, i) => `
+    <article class="card-hover rounded-2xl p-8 border border-slate-200 anim-fade-up anim-d${i+1}" style="background:white;">
+      <p class="text-sm font-semibold mb-2" style="color:#0891b2;">Case Study</p>
+      <h3 class="font-heading text-xl mb-4" style="color:#0f172a;">${c.company}</h3>
+      <div class="space-y-3">
+        <div>
+          <p class="text-xs uppercase tracking-wide font-bold" style="color:#64748b;">Challenge</p>
+          <p class="text-sm" style="color:#0f172a;">${c.challenge}</p>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-wide font-bold" style="color:#64748b;">Result</p>
+          <p class="text-lg font-heading font-bold" style="color:#0891b2;">${c.result}</p>
+        </div>
+        <div class="pt-3 border-t border-slate-200">
+          <p class="text-xs" style="color:#64748b;">Achieved in ${c.time}</p>
+        </div>
+      </div>
+    </article>
+  `).join('');
+}
+
+renderServices();
+renderPricing();
+renderCaseStudies();
+
+// Mobile menu
+document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('hidden');
+  menu.classList.toggle('flex');
+});
+
+document.querySelectorAll('#mobileMenu a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.add('hidden');
+    document.getElementById('mobileMenu').classList.remove('flex');
+  });
+});
+
+// Toast notification
+function showToast(msg, isError) {
+  const existing = document.querySelector('.toast-msg');
+  if (existing) existing.remove();
+  const t = document.createElement('div');
+  t.className = 'toast-msg';
+  t.style.background = isError ? '#dc2626' : '#0891b2';
+  t.style.color = 'white';
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 3500);
+}
+
+// ========== DATA SDK ==========
+const dataHandler = { onDataChanged(data) { /* write-only mode */ } };
+
+(async () => {
+  const r = await window.dataSdk.init(dataHandler);
+  if (!r.isOk) console.error('Data SDK init failed');
+})();
+
+// Contact form submission
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const name = document.getElementById('cf-name').value.trim();
+  const email = document.getElementById('cf-email').value.trim();
+  const phone = document.getElementById('cf-phone').value.trim();
+  const service = document.getElementById('cf-service').value;
+  const budget = document.getElementById('cf-budget').value;
+  const message = document.getElementById('cf-message').value.trim();
+
+  if (!name || !email || !message) {
+    showToast('Please fill all required fields', true);
+    return;
+  }
+
+  const btn = document.getElementById('submitBtn');
+  const txt = document.getElementById('submitText');
+  btn.disabled = true;
+  txt.textContent = 'Sending...';
+
+  const result = await window.dataSdk.create({
+    name, email, phone, service, budget, message,
+    submitted_at: new Date().toISOString()
+  });
+
+  btn.disabled = false;
+  txt.textContent = 'Get Free Audit';
+
+  if (result.isOk) {
+    showToast('✓ Thank you! We'll review your site and contact you within 24 hours.');
+    e.target.reset();
+  } else {
+    showToast('Something went wrong. Please try again.', true);
+  }
+});
+
+// ========== ELEMENT SDK ==========
+function applyConfig(config) {
+  const c = { ...defaultConfig, ...config };
+  const font = c.font_family || defaultConfig.font_family;
+  const headingStack = `${font}, Georgia, serif`;
+  const bodyFont = 'Sora, system-ui, sans-serif';
+
+  // Company name
+  document.getElementById('navCompanyName').textContent = c.company_name;
+  document.getElementById('footerCompanyName').textContent = c.company_name;
+
+  // Hero section
+  document.getElementById('heroTitle').innerHTML = c.hero_title.replace(/\n/g, '<br>');
+  document.getElementById('heroSubtitle').textContent = c.hero_subtitle;
+  document.getElementById('heroCtaText').textContent = c.cta_text;
+
+  // Contact section
+  document.getElementById('contactAddress').textContent = c.contact_address;
+  document.getElementById('contactPhone').textContent = c.contact_phone;
+  document.getElementById('contactEmail').textContent = c.contact_email;
+
+  // Apply colors
+  document.getElementById('appRoot').style.background = c.light_bg;
+
+  // Apply fonts
+  document.querySelectorAll('.font-heading, [class*="font-heading"]').forEach(el => {
+    el.style.fontFamily = headingStack;
+  });
+  document.getElementById('appRoot').style.fontFamily = `${font}, ${bodyFont}`;
+
+  // Font size
+  const base = c.font_size || 16;
+  document.getElementById('appRoot').style.fontSize = base + 'px';
+}
+
+window.elementSdk.init({
+  defaultConfig,
+  onConfigChange: async (config) => { applyConfig(config); },
+  mapToCapabilities: (config) => ({
+    recolorables: [
+      { get: () => config.primary_color || defaultConfig.primary_color, set: (v) => { config.primary_color = v; window.elementSdk.setConfig({ primary_color: v }); } },
+      { get: () => config.secondary_color || defaultConfig.secondary_color, set: (v) => { config.secondary_color = v; window.elementSdk.setConfig({ secondary_color: v }); } },
+      { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+      { get: () => config.light_bg || defaultConfig.light_bg, set: (v) => { config.light_bg = v; window.elementSdk.setConfig({ light_bg: v }); } }
+    ],
+    borderables: [],
+    fontEditable: {
+      get: () => config.font_family || defaultConfig.font_family,
+      set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+    },
+    fontSizeable: {
+      get: () => config.font_size || defaultConfig.font_size,
+      set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+    }
+  }),
+  mapToEditPanelValues: (config) => new Map([
+    ['company_name', config.company_name || defaultConfig.company_name],
+    ['hero_title', config.hero_title || defaultConfig.hero_title],
+    ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
+    ['cta_text', config.cta_text || defaultConfig.cta_text],
+    ['contact_address', config.contact_address || defaultConfig.contact_address],
+    ['contact_phone', config.contact_phone || defaultConfig.contact_phone],
+    ['contact_email', config.contact_email || defaultConfig.contact_email]
+  ])
+});
+
+applyConfig(defaultConfig);
+lucide.createIcons();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f238af032182666',t:'MTc3NzE4NTA2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
